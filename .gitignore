@@ -1,0 +1,4 @@
+node_modules
+Store.json
+yarn.lock
+package-lock.json

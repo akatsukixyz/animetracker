@@ -1,0 +1,17 @@
+{
+  "name": "animetracker",
+  "version": "1.0.0",
+  "description": "A fun project",
+  "main": "Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yahiko (KnowItAllKing)",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^5.0.0",
+    "mongoose": "^5.5.5",
+    "node-fetch": "^2.4.1"
+  }
+}
