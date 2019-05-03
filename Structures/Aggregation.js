@@ -14,11 +14,11 @@ const aggregation = (baseClass, ...mixins) => {
                  if (!prop.match(/^(?:constructor|prototype|arguments|caller|name|bind|call|apply|toString|length)$/))
                     Object.defineProperty(target, prop, Object.getOwnPropertyDescriptor(source, prop));
                });
-    }
+    };
     mixins.forEach(mixin => {
         copyProps(base.prototype, mixin.prototype);
         copyProps(base, mixin);
     });
     return base;
-}
+};
 module.exports = { aggregation };

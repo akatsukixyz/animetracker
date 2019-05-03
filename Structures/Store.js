@@ -14,7 +14,7 @@ class Store {
         if(!fs.existsSync(this.path))
             console.log('Invalid path and/or JSON provided. Either delete the current one and let it be setup automatically, or fix it.');
         this.file = fs.readFileSync(this.path);
-        try { JSON.parse(this.file) } catch(e) { this.init(); }
+        try { JSON.parse(this.file); } catch(e) { this.init(); }
         this.storage = {};
         this.load();
     }
